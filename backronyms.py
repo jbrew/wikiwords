@@ -59,8 +59,23 @@ def fill_by_request(acronym, request, keywords, fdict):
 	return scaffold
 
 
-if __name__ == '__main__':
+def backronym_loop(request):
+	text = wikiwords.text_from_search_term(request.lower())
+	keywords = wikiwords.get_keywords(request.lower())[:150]
+	print('first ten keywords:',keywords[:10])
+	fdict = markov.forward_dict(text)
+	bdict = markov.backward_dict(text)
+	while True:
+		if not input('Find another backronym?\n') in ['no','n','NO','NO!']:
+			backronym = fill_by_request(list(request), request, keywords, fdict)
+			capitalized = [word[0].upper() + word[1:] for word in backronym]
+			print(" ".join(capitalized))
 
+
+
+### TESTS ###
+
+def paris_test():
 	paris_text = wikiwords.text_from_search_term('paris')
 	keywords = wikiwords.get_keywords('paris')[:150]
 	print('first ten keywords:',keywords[:10])
@@ -68,7 +83,18 @@ if __name__ == '__main__':
 	fdict = markov.forward_dict(paris_text)
 	bdict = markov.backward_dict(paris_text)
 	
-	print(fill_by_request(list('paris'), 'PaRiS', keywords, fdict))
+
+	while True:
+		if not input('Find another backronym?\n') in ['no','n','NO','NO!']:
+			print(fill_by_request(list('paris'), 'PaRiS', keywords, fdict))
+
+if __name__ == '__main__':
+	#paris_test()
+
+	#backronym_loop('PaRiS')
+	backronym_loop('LoNDoN')
+
+	
 
 
 
