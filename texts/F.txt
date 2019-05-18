@@ -1,0 +1,76 @@
+F (named ef ) is the sixth letter in the modern English alphabet and the ISO basic Latin alphabet.
+
+
+== History ==
+
+The origin of 'F' is the Semitic letter vâv (or waw) that represented a sound like /v/ or /w/. Graphically it originally probably depicted either a hook or a club. It may have been based on a comparable Egyptian hieroglyph such as that which represented the word mace (transliterated as ḥ(dj)): The Phoenician form of the letter was adopted into Greek as a vowel, upsilon (which resembled its descendant 'Y' but was also the ancestor of the Roman letters 'U', 'V', and 'W'); and, with another form, as a consonant, digamma, which indicated the pronunciation /w/, as in Phoenician. Latin 'F,' despite being pronounced differently, is ultimately descended from digamma and closely resembles it in form.
+After sound changes eliminated /w/ from spoken Greek, digamma was used only as a numeral. However, the Greek alphabet also gave rise to other alphabets, and some of these retained letters descended from digamma. In the Etruscan alphabet, 'F' probably represented /w/, as in Greek, and the Etruscans formed the digraph 'FH' to represent /f/.  (At the time these letters were borrowed, there was no Greek letter that represented /f/: the Greek letter phi 'Φ' then represented an aspirated voiceless bilabial plosive /pʰ/, although in Modern Greek it has come to represent /f/.) When the Romans adopted the alphabet, they used 'V' (from Greek upsilon) not only for the vowel /u/, but also for the corresponding semivowel /w/, leaving 'F' available for /f/.  And so out of the various vav variants in the Mediterranean world, the letter F entered the Roman alphabet attached to a sound which its antecedents in Greek and Etruscan did not have. The Roman alphabet forms the basis of the alphabet used today for English and many other languages.
+The lowercase 'f' is not related to the visually similar long s, 'ſ' (or medial s). The use of the long s largely died out by the beginning of the 19th century, mostly to prevent confusion with 'f' when using a short mid-bar (see more at: S).
+
+
+== Use in writing systems ==
+
+
+=== English ===
+In the English writing system ⟨f⟩ is used to represent the sound , the voiceless labiodental fricative. It is often doubled at the end of words. Exceptionally, it represents the voiced labiodental fricative  in the common word "of".
+
+
+=== Other languages ===
+In the writing systems of other languages, ⟨f⟩ commonly represents /f/, [ɸ] or /v/.
+
+In French orthography, ⟨f⟩ is used to represent /f/. It may also be silent at the end of words.
+In Spanish orthography, ⟨f⟩ is used to represent /f/.
+In the Hepburn romanization of Japanese, ⟨f⟩ is used to represent [ɸ]. This sound is usually considered to be an allophone of /h/, which is pronounced in different ways depending upon its context; Japanese /h/ is pronounced as [ɸ] before /u/.
+In Welsh orthography, ⟨f⟩ represents /v/ while ⟨ff⟩ represents /f/.
+In Slavic languages, ⟨f⟩ is used primarily in words of foreign (Greek, Latin, or Germanic) origin.
+In spoken Icelandic, ⟨f⟩ in the middle of a word is often pronounced as a v (e.g. Að sofa - to sleep).
+
+
+=== International Phonetic Alphabet ===
+The International Phonetic Alphabet uses ⟨f⟩ to represent the voiceless labiodental fricative.
+
+
+=== In mathematics ===
+An italic letter f is conventionally used to denote an arbitrary function. See also f with hook (ƒ).
+
+
+== Related characters ==
+
+
+=== Ancestors, descendants and siblings ===
+F with diacritics: Ƒ ƒ Ḟ ḟ Ꞙ ꞙ ᵮ ᶂ ᵮ
+Ꞙ ꞙ : F with stroke is used in the Teuthonista phonetic transcription system, and older Ewe writing
+ꬵ : Lenis F is used in the Teuthonista phonetic transcription system
+ᶠ : Modifier letter small f is used for phonetic transcription
+ꜰ : Small capital F was used in the Icelandic First Grammatical Treatise to mark gemination
+Ꝼ ꝼ  : Insular F is used in Norse and Old English contexts
+ꟻ : Reversed F was used in ancient Roman texts to stand for filia (daughter) or femina (woman)
+Ⅎ ⅎ : Claudian letters
+𐤅: Semitic letter Waw, from which the following symbols originally derive
+Ϝ ϝ : Greek letter Digamma, from which F derives
+𐌅 : Old Italic V/F (originally used for V, in languages such as Etruscan and Oscan), which derives from Greek Digamma, and is the ancestor of modern Latin F
+Y y : Latin letter Y, sharing its roots with F
+V v : Latin letter V, also sharing its roots with F
+U u : Latin letter U, which is descended from V
+W w : Latin letter W, also descended from V
+
+
+=== Ligatures and abbreviations ===
+₣ : French franc, Latin capital letter F with stroke
+℉ : degree Fahrenheit
+
+
+== Computing codes ==
+1 Also for encodings based on ASCII, including the DOS, Windows, ISO-8859 and Macintosh families of encodings.
+
+
+== Other representations ==
+
+
+== Footnotes ==
+
+
+=== Notes ===
+
+
+=
