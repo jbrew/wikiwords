@@ -13,6 +13,14 @@ def text_from_path(path):
 	with open(path) as f:
 		return f.read()
 
+def text_from_directory(dirpath):
+	text = ''
+	for fname in os.listdir(dirpath)[1:]:
+		fpath = '%s/%s' % (dirpath, fname)
+		text += text_from_path(fpath)
+	return text
+
+
 def clean_all(lines):
 	return [remove_punctuation(line.strip()) for line in lines]
 

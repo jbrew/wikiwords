@@ -45,11 +45,17 @@ def get_keywords(search_term):
 	return [keyword for keyword, score in keywords_and_scores]
 
 def keywords_with_scores(search_term):
-	page = get_page_from_search_term(search_term)
 
-	print('finding keywords for',page.title)
+	# convert to title case
+	lookup_name = search_term[0].upper() + search_term[1:].lower() + '.txt'
 
-	savename = page.title + '.txt'
+	if lookup_name in os.listdir('texts'):
+		savename = lookup_name
+	else:
+		page = get_page_from_search_term(search_term)
+		print('finding keywords for',page.title)
+		savename = page.title + '.txt'
+
 	savepath = 'texts/' + savename
 
 	if not os.path.exists(savepath):

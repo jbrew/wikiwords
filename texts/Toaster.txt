@@ -1,0 +1,85 @@
+A toaster, or a toast maker, is an electric small appliance designed to toast sliced bread by exposing it to radiant heat, thus converting it into toast. Toasters can toast multiple types of sliced bread products. Invented in Scotland in 1893, it was developed over the years, with the introduction of an automatic mechanism to stop the toasting and pop the slices up.
+The most common household toasting appliances are the pop-up toaster and the toaster oven. Bread slices are inserted into slots in the top of a pop-up toaster, which make toast from bread in one to three minutes by using electric heating elements. Toasters have a control to adjust how much the appliance toasts the bread. Toaster ovens have a hinged door in the front that opens to allow food items to be placed on a rack, which has heat elements above and below the grilling area. Toaster ovens function the same as a small-scale conventional oven. Toaster ovens typically have settings to toast bread and a temperature control for use of the appliance as an oven.
+
+
+== Types ==
+
+Modern toasters are typically one of three varieties: pop-up toasters, toaster ovens, and conveyor belt toasters. For home use, consumers typically choose a toaster type based on their intended use. Pop-up toasters are better than toaster ovens for making evenly toasted toast, but toaster ovens can bake and broil while pop-up toasters cannot.
+Conveyor belt toasters are mostly used in restaurants or other industrial catering environments where toast needs to be made quickly and in larger quantities.
+
+
+=== Features ===
+Features which distinguish various types of toasters include the following:
+For all toastersConsistency of toasting – The ideal toaster can provide even toasting over the area of the bread, and reproduce this throughout the lifetime of the machine.
+Choice of toastiness – The user should be able to choose the darkness of the toasting.
+Toast output – Various toasters can process bread into toast at different capacities.
+Ease of operation – The toaster's controls should be labelled to permit easy use and predictable results.
+Removability of crumb tray – Toasters with a permanently attached crumb tray will be more difficult to clean than those with a removable tray.
+Cord placement – There can be variation on the placement of a cord as well as retraction functionality.For pop-up toasters onlyOne-sided toasting – Toasters may optionally toast only one side of the bread, perhaps for toasting one side of a bagel.
+One-slot toasting – The ability to toast an individual slot, if a single item is desired.
+Slot depth – People desiring toasted oblong bread should seek a deep slotted toaster.
+Slot width – People desiring toasted fat bread should seek a wide slotted toaster, as for bagels.
+Safety features – Most contemporary pop-up toasters have automatic shutoff in case of toast displacement and burning.
+Bread lifter – Beyond the pop-up, some toasters may incorporate a bread lifter to further expel toast products.For toaster ovens onlyBroil options – If only the upper heating element may be used then toaster ovens can make broiling an option.
+Compact shape – Appropriately sized toaster ovens will serve the user's requirements but not occupy more counter space than necessary.
+Design for cleaning – A nonstick interior such as that made from porcelain makes oven interiors easier to clean.
+Interior lighting – A light inside the oven permits observation of cooking food.
+Multiple shelf racks – Having options for positioning the oven shelf gives more control over distance between food and the heating element.
+
+
+=== Pop-up toasters ===
+
+In pop-up or automatic toasters, bread slices are inserted vertically into the slots (generally only large enough to admit a single slice of bread each) on the top of the toaster. A lever on the side of the toaster is pressed, activating the toaster. When an internal device determines that the toasting cycle is complete, the toaster turns off and the toast pops up out of the slots. The heating elements of a pop-up toaster are usually oriented vertically, parallel to the bread slice – although there are some variations.
+In earlier days, the completion of the toasting operation was determined by a mechanical clockwork timer; the user could adjust the running time of the timer to determine the degree of "doneness" of the toast, but the first cycle produced less toasted toast than subsequent cycles because the toaster was not yet warmed up. Toasters made since the 1930s frequently use a thermal sensor, such as a bimetallic strip, located close to the toast. This allows the first cycle to run longer than subsequent cycles. The thermal device is also slightly responsive to the actual temperature of the toast itself. Like the timer, it can be adjusted by the user to determine the "doneness" of the toast.The most commonly used methods to adjust heat supplied to the toast are either variable time or a heat sensor.
+Among pop-up toasters, those toasting two slices of bread are more purchased than those which can toast four. Pop-up toasters can have a range of appearances beyond just a square box, and may have an exterior finish of chrome, copper, brushed metal, or any color plastic. The marketing and price of toasters may not be an indication of quality for producing good toast. A typical modern two-slice pop-up toaster can draw from 600 to 1200 watts.
+
+
+=== Toaster ovens ===
+
+Toaster ovens are small electric ovens with a front door, wire rack and removable baking pan. To toast bread with a toaster oven, slices of bread are placed horizontally on the rack. When the toast is done, the toaster turns off, but in most cases the door must be opened manually. Most toaster ovens are significantly larger than toasters, but are capable of performing most of the functions of electric ovens, albeit on a much smaller scale. They can be used to cook toast with toppings, like garlic bread or cheese, though they tend to produce drier toast since their heating elements are located farther from the toast (to allow larger items to be cooked). They take 4–6 minutes to make toast as compared to 2–3 minutes in pop-up toasters. Since the toast lies on bars in a toaster oven, the toast will have untoasted stripes on one side. The evidence from product testing does not indicate that convection toaster ovens perform better than regular toaster ovens.As an appliance, the space toaster ovens require on a countertop ranges from 16 by 8 inches (41 cm × 20 cm)to 20 by 10 inches (51 cm × 25 cm).
+
+
+=== Conveyor toasters ===
+
+Conveyor toasters are designed to make many slices of toast and are generally used in the catering industry, cafeterias, diners, and institutional cooking facilities, as they are suitable for large-scale use. Bread is toasted at a rate of 300–1600 slices an hour, making conveyor toasters ideal for large restaurants that are consistently busy. Such devices have occasionally been produced for home use as far back as 1938, when the Toast-O-Lator went into limited production.
+
+
+== History ==
+
+Before the development of the electric toaster, sliced bread was toasted by placing it in a metal frame or on a long-handled toasting-fork and holding it near a fire or over a kitchen grill. Utensils for toasting bread over open flames appeared in the early 19th century, including decorative implements made from wrought iron.The first electric bread toaster was invented by Alan MacMasters in Edinburgh, Scotland in 1893.
+
+
+=== Development of the heating element ===
+The primary technical problem at the time was the development of a heating element which would be able to sustain repeated heating to red-hot temperatures without either breaking or becoming too brittle. A similar technical challenge had recently been surmounted with the invention of the first successful incandescent lightbulbs by Joseph Swan and Thomas Edison. However, the light bulb took advantage of the presence of a vacuum, something that couldn't be used with the toaster.
+Macmasters' toaster was commercialized by the Crompton, Stephen J. Cook & Company of the UK as a toasting appliance called the Eclipse. Early attempts at producing electrical appliances using iron wiring were unsuccessful, because the wiring was easily melted and a serious fire hazard. Meanwhile, electricity was not readily available, and when it was, mostly only at night.The problem of the heating element was solved in 1905 by a young engineer named Albert Marsh who designed an alloy of nickel and chromium, which came to be known as Nichrome.The first US patent application for an electric toaster was filed by George Schneider of the American Electrical Heater Company of Detroit in collaboration with Marsh. One of the first applications the Hoskins company had considered for chromel was toasters, but eventually abandoned such efforts to focus on making just the wire itself.The first commercially successful electric toaster was introduced by General Electric in 1909 for the GE model D-12.
+
+
+=== Dual-side toasting and automated pop-up technologies ===
+
+In 1913, Lloyd Groff Copeman and his wife Hazel Berger Copeman applied for various toaster patents and in that same year the Copeman Electric Stove Company introduced the toaster with automatic bread turner. The company also produced the "toaster that turns toast." Before this, electric toasters cooked bread on one side and then it was flipped by hand to toast the other side. Copeman's toaster turned the bread around without having to touch it.The automatic pop-up toaster, which ejects the toast after toasting it, was first patented by Charles Strite in 1921. In 1925, using a redesigned version of Strite's toaster, the Waters Genter Company introduced the Model 1-A-1 Toastmaster, the first automatic pop-up, household toaster that could brown bread on both sides simultaneously, set the heating element on a timer, and eject the toast when finished.
+
+
+=== Toasting technology after the 1940s ===
+By the middle of the 20th century, some high-end U.S. toasters featured automatic toast lowering and raising, with no levers to operate — simply dropping the slices into the machine commenced the toasting procedure. A notable example was the Sunbeam T-20, T-35 and T-50 models (identical except for details such as control positioning) made from the late 1940s through the 1960s, which used the mechanically multiplied thermal expansion of the resistance wire in the center element assembly to lower the bread; the inserted slice of bread tripped a lever to switch on the power which immediately caused the heating element to begin expanding thus lowering the bread.
+When the toast was done, as determined by a small bimetallic sensor actuated by the heat passing through the toast, the heaters were shut off and the pull-down mechanism returned to its room-temperature position, slowly raising the finished toast. This sensing of the heat passing through the toast, meant that regardless of the color of the bread (white or wholemeal) and the initial temperature of the bread (even frozen), the bread would always be toasted to the same degree. If a piece of toast was re-inserted into the toaster, it would be only reheated.Newer additions to toaster technology include wider toasting slots for bagels and thick breads, the ability to toast frozen breads, and the option to heat a single side or slot. Most toasters can also be used to toast other foods such as teacakes, Pop Tarts, potato waffles and crumpets, though the addition of melted butter or sugar to the interior components of automatic electric toasters often contributes to eventual failure. In rare cases, some hobbyists modify toasters to print images and logos on bread slices.
+
+
+== Risks ==
+Toasters cause nearly 800 deaths annually due to electrocution and fires. Poking knives and other objects into a toaster is dangerous, although following electrical wiring and electrical appliances standards should reduce the risk. Apart from a risk of electrocution, there is a risk of damaging the innards of the toaster, which may later present a fire risk. Toasters can cause house fires. Fires near electricity should not be fought with anything that conducts electricity, such as water. Disconnecting the power first is recommended. To avoid fires, a toaster can be unplugged when not in use. 
+
+
+== Research ==
+
+A number of projects have added advanced technology to toasters. In 1990, Simon Hackett and John Romkey created "The Internet Toaster," a toaster which could be controlled from the Internet. In 2001, Robin Southgate from Brunel University in England created a toaster that could toast a graphic of the weather prediction (limited to sunny or cloudy) onto a piece of bread. The toaster dials a pre-coded phone number to get the weather forecast.In 2005, Technologic Systems, a vendor of embedded systems hardware, designed a toaster running the NetBSD Unix-like operating system as a sales demonstration system. In 2012, Basheer Tome, a student at Georgia Tech, designed a toaster using color sensors to toast bread to the exact shade of brown specified by a user.A toaster which used Twitter was cited as an early example of an application of the Internet of Things. Toasters have been used as advertising devices for online marketing.With permanent modifications, a toaster oven can be used as a reflow oven for the purpose of soldering electronic components to circuit boards.
+A hot dog toaster is a variation on the toaster design; it will cook hot dogs without use of microwaves or stoves. The appliance looks similar to a regular toaster, except that there are two slots in the middle for hot dogs, and two slots on the outside for toasting the buns.
+
+
+== See also ==
+
+Bachelor griller
+Dualit
+List of cooking appliances
+List of home appliances
+Pie iron
+
+

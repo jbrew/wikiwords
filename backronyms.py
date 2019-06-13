@@ -1,98 +1,119 @@
 import wikiwords
 import random
+import command_line
+import os
 from model import markov
 from model import dictionary
+from model import librarian
+
+uppercase = set('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+lowercase = set('abcdefghijklmnopqrstuzwxyz')
 
 
-def naive_keyword_fill_loop(word):
-	kwords = wikiwords.get_keywords(word)
-	keywords = [kw for kw in kwords if kw[0] in list(word)]
-	kw_dict = {}
-	for kw in keywords:
-		if kw[0] in kw_dict:
-			kw_dict[kw[0]].append(kw)
-		else:
-			kw_dict[kw[0]] = [kw]
+"""
+This is command line program for filling in Backronyms.
 
-	while True:
-		command = input('Again?\n')
+"""
 
-		for letter in word:
-			print(random.choice(kw_dict[letter]))
+def fill_from_text(request, text):
+	"""
+	Given a requested acronym, fill with sequences of words from the text.
+	"""
+
+	words = text.lower().split()
+	initials = ''.join([word[0] for word in words])
+
+	if len(request) == 0:
+		return []
+	else:
+		for sequence_length in range(len(request), 0, -1):
+			sequence = request[:sequence_length]
+			if sequence in initials:
+				start = initials.index(sequence)
+				end = start + sequence_length
+				word_sequence = words[start:end]
+				word_sequence.extend(fill_from_text(request[sequence_length:], text))
+				return word_sequence
+		return 'Could not find'
+
 
 def filter_by_letter(words, letter):
 	return [word for word in words if word[0] == letter]
 
-def fill_by_request(acronym, request, keywords, fdict):
+def fill_with_keywords_and_bridges(request, keywords, markov_dict):
 	
 	"""
-	acronym: 	a list of words
-	request: 	a same-length string of uppercase and lowercase letters and underscores
-				indicating which positions to fill with keywords (uppercase), fill with 
-				bridge words (lowercase) or leave alone (underscores)
-	keywords:	a list of topical keywords
-	fdict:		a dictionary mapping contexts to continuations
+	request: 		a string of uppercase and lowercase letters and underscores
+					indicating which positions to fill with keywords (uppercase), fill with 
+					bridge words (lowercase) or leave alone (underscores)
+	keywords:		a list of topical keywords
+	markov_dict:	a dictionary mapping contexts to continuations
 	"""
 
-	if not len(request) == len(acronym):
-		print('request must be same length as acronym')
-		return None
+	scaffold = []
 
-	uppercase = set('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
-	lowercase = set('abcdefghijklmnopqrstuzwxyz')
-
-	scaffold = [None] * len(acronym)
-
-	for i, letter in enumerate(request):
+	for letter in request:
 		if letter in uppercase:
 			candidates = filter_by_letter(keywords, letter.lower())
 			if len(candidates) > 0:
-				scaffold[i] = random.choice(candidates)
+				scaffold.append(random.choice(candidates))
+			else:
+				scaffold.append(None)
+		else:
+			scaffold.append(None)
 
 	for i, entry in enumerate(scaffold):
+
 		if entry == None:
-			candidates = [k for k in fdict.keys() if len(k) > 0 and len(k.split()) == 1 and k[0] == request[i]]
-			bridges = markov.scored_bridges(scaffold[i-1], candidates, scaffold[i+1], fdict)
+			candidates = [k for k in markov_dict.keys() if len(k) > 0 and len(k.split()) == 1 and k[0] == request[i]]
+			bridges = markov.scored_bridges(scaffold[i-1], candidates, scaffold[i+1], markov_dict)
 			top_bridges = dictionary.sort_ascending(bridges)[:10]
 			scaffold[i] = random.choice(top_bridges)[0]
 
 	return scaffold
 
 
-def backronym_loop(request):
+### LOOPS ###
+
+
+# keep getting backronyms until user breaks loop
+def keywords_loop(request):
 	text = wikiwords.text_from_search_term(request.lower())
 	keywords = wikiwords.get_keywords(request.lower())[:150]
 	print('first ten keywords:',keywords[:10])
-	fdict = markov.forward_dict(text)
-	bdict = markov.backward_dict(text)
-	while True:
-		if not input('Find another backronym?\n') in ['no','n','NO','NO!']:
-			backronym = fill_by_request(list(request), request, keywords, fdict)
-			capitalized = [word[0].upper() + word[1:] for word in backronym]
-			print(" ".join(capitalized))
-
-
-
-### TESTS ###
-
-def paris_test():
-	paris_text = wikiwords.text_from_search_term('paris')
-	keywords = wikiwords.get_keywords('paris')[:150]
-	print('first ten keywords:',keywords[:10])
-
-	fdict = markov.forward_dict(paris_text)
-	bdict = markov.backward_dict(paris_text)
 	
-
+	markov_dict = markov.forward_dict(text)
+	
 	while True:
-		if not input('Find another backronym?\n') in ['no','n','NO','NO!']:
-			print(fill_by_request(list('paris'), 'PaRiS', keywords, fdict))
+		backronym = fill_with_keywords_and_bridges(request, keywords, markov_dict)
+		capitalized = [word[0].upper() + word[1:] for word in backronym]
+		print(" ".join(capitalized))
+
+		if input('Find another backronym?\n') in ['no','n','NO', 'N']:
+			break
+
+# keep filling backronyms from text until user breaks loop
+def text_loop(request):
+	while True:
+		options = os.listdir('texts')
+		random.shuffle(options)
+		fpath = 'texts/' + command_line.choose_from_list(options[:10])
+		with open(fpath) as f:
+			text = f.read()
+		print(fill_from_text(request, text))
+
+		if input('Another?\n') in ['no','n','NO', 'N']:
+			break
+
+
+
 
 if __name__ == '__main__':
-	#paris_test()
+	#text_loop('magic')
+	keywords_loop('MaGiC')
 
-	#backronym_loop('PaRiS')
-	backronym_loop('LoNDoN')
+
+	
 
 	
 

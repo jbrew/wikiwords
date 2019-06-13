@@ -71,6 +71,7 @@ def normalize(d):
 	total = sum(d.values())
 	return {k: v/total for k, v in d.items()}
 
+
 #### COMPARISON ####
 
 def delta(signal, baseline):
