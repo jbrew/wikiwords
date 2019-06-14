@@ -2,6 +2,7 @@ import wikiwords
 import random
 import command_line
 import os
+import cfg
 from model import markov
 from model import dictionary
 from model import librarian
@@ -14,6 +15,35 @@ lowercase = set('abcdefghijklmnopqrstuzwxyz')
 This is command line program for filling in Backronyms.
 
 """
+
+def fill_from_context_free_grammar(request, text, attempts=100):
+
+	pos_tagged = cfg.pos_tagged_from_text(text)
+	grammar = cfg.pos_grammar_from_tagged(pos_tagged)
+	pos_dict = cfg.word_frequency_by_pos(pos_tagged)
+	pos_sequences = [cfg.expand('NP', grammar) for i in range(attempts)]
+	correct_length_sequences = [sequence for sequence in pos_sequences if len(sequence.split())==len(request)]
+
+	
+
+	for sequence in correct_length_sequences:
+		scaffold = [None for i in range(len(request))]
+		tags = sequence.split()
+		for i, tag in enumerate(tags):
+			words_with_tag = pos_dict[tag]
+			words_with_initial = [word for word in words_with_tag if word[0] == request[i]]
+			if len(words_with_initial) > 0:
+				scaffold[i] = random.choice(words_with_initial)
+		
+		if not None in scaffold:
+			return scaffold
+
+	return None
+
+
+
+
+
 
 def fill_from_text(request, text):
 	"""
@@ -31,7 +61,7 @@ def fill_from_text(request, text):
 			if sequence in initials:
 				start = initials.index(sequence)
 				end = start + sequence_length
-				word_sequence = words[start:end]
+				word_sequence = [words[start:end]]
 				word_sequence.extend(fill_from_text(request[sequence_length:], text))
 				return word_sequence
 		return 'Could not find'
@@ -109,8 +139,13 @@ def text_loop(request):
 
 
 if __name__ == '__main__':
+
+	text = librarian.text_from_path('texts/Bagel.txt')
+
+	print(fill_from_context_free_grammar('bagel', text))
+
 	#text_loop('magic')
-	keywords_loop('MaGiC')
+	#keywords_loop('MaGiC')
 
 
 	

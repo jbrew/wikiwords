@@ -14,7 +14,7 @@ http://www.nltk.org/howto/generate.html
 
 """
 
-def word_freq_by_POS(pos_tagged):
+def word_frequency_by_pos(pos_tagged):
 	"Returns occurrence rates by part-of-speech"
 	pos_dictionary = {}
 	for tok, tag in pos_tagged:
@@ -32,7 +32,7 @@ def grammar_from_tagged(pos_tagged):
 	# grammar mapping symbols to their productions
 	grammar = {}
 
-	pos_dict = word_freq_by_POS(pos_tagged)
+	pos_dict = word_frequency_by_pos(pos_tagged)
 
 	nouns = list(pos_dict['NN'].keys())
 	adjectives = list(pos_dict['JJ'].keys())
@@ -55,14 +55,36 @@ def grammar_from_tagged(pos_tagged):
 
 	return grammar
 
+def pos_grammar_from_tagged(pos_tagged):
 
-def expand(symbol, grammar):
-	if not symbol in grammar:
-		return symbol
+	grammar = {}
+	pos_dict = word_frequency_by_pos(pos_tagged)
+
+	grammar['NP'] = {'Adj NP': 1, 'Noun': 1, 'Noun Verb NP': 1}#, 'NP PP': 1}
+	#grammar['PP'] = {'P NP': 1}
+	grammar['VP'] = {'Verb NP': 1, 'Verb Adj': 1}
+
+	grammar['Noun'] = {'NN': 1}
+	grammar['Adj'] = {'JJ': 1}
+	#grammar['P'] = {'with': 1, 'of': 1, 'for': 1}
+	grammar['Verb'] = {'VBG': 1}
+	return grammar
+
+def expand(symbol, grammar, depth=0, max_depth=5):
+	if depth > max_depth:
+		return ""
 	else:
-		options = list(grammar[symbol].keys())
-		expansion = random.choice(options)
-		return " ".join([expand(symbol, grammar) for symbol in expansion.split()])		# recursive call
+		if not symbol in grammar:
+			return symbol
+		else:
+			options = list(grammar[symbol].keys())
+			expansion = random.choice(options)
+			tokens_to_expand = expansion.split()
+			# if len(tokens_to_expand) > max_length:
+			# 	return ""
+			#else:
+			return " ".join([expand(symbol, grammar, depth+1) for symbol in tokens_to_expand])		# recursive call
+
 
 
 
@@ -87,13 +109,20 @@ def word_to_pos_dict(tagged_words, threshold = 0.3):
 	return {k: dictionary.normalize(d) for k, d in oddballs_removed.items()}
 
 
+def pos_tagged_from_text(text):
+	tokens = [word.strip() for word in nltk.word_tokenize(text) if not '.' in word and not '==' in word]
+	return nltk.pos_tag(tokens)
+
+
 ### TESTS ###
+
+
 
 def grammar_test():
 	text = librarian.text_from_path('texts/Book.txt')
 	tokens = [word.strip() for word in nltk.word_tokenize(text) if not '.' in word and not '==' in word]
 	pos_tagged = nltk.pos_tag(tokens)
-	grammar = grammar_from_tagged(pos_tagged)
+	grammar = pos_grammar_from_tagged(pos_tagged)
 	print(expand('NP', grammar))
 
 
