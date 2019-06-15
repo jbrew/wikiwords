@@ -1,0 +1,85 @@
+In object-oriented programming, the safe navigation operator (also known as optional chaining operator, safe call operator, null-conditional operator) is a binary operator that returns null if its first argument is null; otherwise it performs a dereferencing operation as specified by the second argument (typically an object member access or an array index).
+It is used to avoid sequential explicit null checks and assignments and replace them with method/property chaining.  In programming languages where the navigation operator (e.g. ".") leads to an error if applied to a null object, the safe navigation operator stops the evaluation of a method/field chain and returns null as the value of the chain expression. It is currently supported in languages such as Apache Groovy, Swift, Ruby, C#, Kotlin, CoffeeScript, Scala and others.   
+There is currently no common naming convention for this operator, but safe navigation operator is the most widely used term.
+The main advantage of using this operator is that it solves a problem commonly known as pyramid of doom. Instead of writing multiple nested ifs, programmers can just use usual chaining, but put question mark symbols before dots (or other characters used for chaining).
+While the safe navigation operator and null coalescing operator are both null-aware operators, they are not operationally equivalent.
+
+
+== Examples ==
+
+
+=== Groovy ===
+Safe navigation operator:
+
+
+=== Objective-C ===
+Normal navigation syntax can be used in most cases without regarding NULLs, as the underlying messages, when sent to NULL, is discarded without any ill effects.
+
+
+=== Swift ===
+Optional chaining operator:
+
+Optional subscript operator:
+
+
+=== Ruby ===
+Ruby supports the &. safe navigation operator (also known as the lonely operator) since version 2.3.0:
+
+
+=== C# ===
+In C# 6.0 and above, basic null-conditional operators ?. and ?[]:
+
+
+=== Gosu ===
+Null safe invocation operator:
+
+The null-safe invocation operator is not needed for class attributes declared as Gosu Properties:
+
+
+=== Kotlin ===
+Safe call operator:
+
+
+=== Perl 6 ===
+Safe method call:
+
+
+=== Python ===
+The safe navigation operator is not currently supported in Python, but it is currently being proposed for inclusion with the following syntax:
+
+
+=== CoffeeScript ===
+Existential operator:
+
+
+=== Crystal ===
+Crystal supports the try safe navigation method  
+
+
+=== Rust ===
+Rust supports the ? and try!{} operators for structures implementing the Try trait.
+
+
+=== Scala ===
+The null-safe operator in Scala is provided by the library Dsl.scala.
+
+The @ ? annotation can be used to denote a nullable value.
+
+The normal . in Scala is not null-safe, when performing a method on a null value.
+
+The exception can be avoided by using ? operator on the nullable value instead:
+
+The entire expression is null if one of ? is performed on a null value.
+The boundary of a null safe operator ? is the nearest enclosing expression whose type is annotated as @ ?.
+
+
+=== Clojure ===
+Clojure doesn't have true operators in the sense other languages uses it, but as it interop with Java, and has to perform object navigation when it does, the some-> macro can be used to perform safe navigation.
+
+
+== See also ==
+Null aware operators
+Elvis operator
+Null coalescing operator
+
+

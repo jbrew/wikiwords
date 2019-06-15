@@ -16,15 +16,16 @@ This is command line program for filling in Backronyms.
 
 """
 
-def fill_from_context_free_grammar(request, text, attempts=100):
+def fill_from_context_free_grammar(request, text, attempts=10000):
 
 	pos_tagged = cfg.pos_tagged_from_text(text)
 	grammar = cfg.pos_grammar_from_tagged(pos_tagged)
 	pos_dict = cfg.word_frequency_by_pos(pos_tagged)
 	pos_sequences = [cfg.expand('NP', grammar) for i in range(attempts)]
-	correct_length_sequences = [sequence for sequence in pos_sequences if len(sequence.split())==len(request)]
-
 	
+	correct_length_sequences = [sequence for sequence in pos_sequences if len(sequence.split())==len(request)]
+	
+	candidates = []
 
 	for sequence in correct_length_sequences:
 		scaffold = [None for i in range(len(request))]
@@ -36,9 +37,35 @@ def fill_from_context_free_grammar(request, text, attempts=100):
 				scaffold[i] = random.choice(words_with_initial)
 		
 		if not None in scaffold:
-			return scaffold
+			candidates.append(scaffold)
 
-	return None
+
+	keywords = dict(wikiwords.keywords_with_scores(request.lower())[:150])
+	markov_dict = markov.forward_dict(text)
+
+	keyword_scores = [(candidate, score_by_keywords(candidate, keywords)) for candidate in candidates]
+	markov_scores = [(candidate, score_by_markov(candidate, markov_dict)) for candidate in candidates]
+
+	keyword_weight = 1
+	markov_weight = 0
+
+	candidates_scored_by_mixture = [(candidate, keyword_scores[i][1]*keyword_weight + markov_scores[i][1]*markov_weight) for i, candidate in enumerate(candidates)]
+
+	return sorted(candidates_scored_by_mixture[:20], key=lambda x: x[1], reverse=True)
+
+
+
+def score_by_keywords(candidate_sequence, keywords):
+	"""
+	candidate_sequence: a list of words
+	keywords: a dictionary mapping keywords to scores
+	"""
+	return sum([keywords[word] for word in candidate_sequence if word in keywords])
+
+
+def score_by_markov(candidate_sequence, markov_dict):
+	cost = markov.transition_cost(" ".join(candidate_sequence), markov_dict)
+	return 1/cost
 
 
 
@@ -140,12 +167,23 @@ def text_loop(request):
 
 if __name__ == '__main__':
 
-	text = librarian.text_from_path('texts/Bagel.txt')
 
-	print(fill_from_context_free_grammar('bagel', text))
+	while True:
+		print()
+		options = os.listdir('texts')
+		random.shuffle(options)
+		fname = command_line.choose_from_list(options[:10])
+		print(fname)
+		fpath = 'texts/' + fname
+		request = fname.split('.txt')[0].lower()
+		print(request)
+		text = librarian.text_from_path(fpath)
 
-	#text_loop('magic')
-	#keywords_loop('MaGiC')
+		candidates_and_scores = fill_from_context_free_grammar(request, text)
+		for c, s in candidates_and_scores:
+			print(" ".join(c), s)
+
+
 
 
 	

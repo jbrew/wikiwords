@@ -60,14 +60,14 @@ def pos_grammar_from_tagged(pos_tagged):
 	grammar = {}
 	pos_dict = word_frequency_by_pos(pos_tagged)
 
-	grammar['NP'] = {'Adj NP': 1, 'Noun': 1, 'Noun Verb NP': 1}#, 'NP PP': 1}
-	#grammar['PP'] = {'P NP': 1}
+	grammar['NP'] = {'Adj NP': 1, 'Noun': 1, 'Noun Verb NP': 1, 'NP Verb Noun': 1} #'NP PP': 1}
+	grammar['PP'] = {'Prep NP': 1}
 	grammar['VP'] = {'Verb NP': 1, 'Verb Adj': 1}
 
 	grammar['Noun'] = {'NN': 1}
 	grammar['Adj'] = {'JJ': 1}
-	#grammar['P'] = {'with': 1, 'of': 1, 'for': 1}
-	grammar['Verb'] = {'VBG': 1}
+	#grammar['Prep'] = {'IN': 1}
+	grammar['Verb'] = {'VBG': 1, 'VBZ': 1}
 	return grammar
 
 def expand(symbol, grammar, depth=0, max_depth=5):
