@@ -1,6 +1,6 @@
 import wikiwords
 import random
-import command_line
+from model import command_line
 import os
 import cfg
 from model import markov

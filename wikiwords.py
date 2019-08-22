@@ -4,7 +4,13 @@ from model import librarian
 from model import dictionary
 import os
 
+
+
 def get_page_from_search_term(term):
+	"""
+	returns the top search result if there are any
+	otherwise, returns the string 'No search results found!'
+	"""
 	search_results = wikipedia.search(term)
 	
 	if len(search_results) == 0:
@@ -15,6 +21,9 @@ def get_page_from_search_term(term):
 		return p
 
 def text_from_search_term(term):
+	"""
+	returns the text of the page up to the header for the References section
+	"""
 	page = get_page_from_search_term(term)
 	return page.content.split('== References ==')[0]
 
@@ -35,16 +44,28 @@ def print_to_file(page, savepath):
 		#f.write('\n'.join(page.links))
 
 def get_stopwords():
+	"""
+	loads a list of very common "stopwords" to ignore in listing keywords
+	"""
 	with open('resources/stopwords.txt') as f:
 		return set([line.strip() for line in f.readlines()])
 
 
-# get the words that occur in wikipedia articles about this topic but not others
 def get_keywords(search_term):
+	"""
+	get the scored keywords for the search term's page,
+	then just return the top words without their scores
+	"""
 	keywords_and_scores = keywords_with_scores(search_term)
 	return [keyword for keyword, score in keywords_and_scores]
 
 def keywords_with_scores(search_term):
+	"""
+	for a given search term, computes the tf-idf score for words in the associated article
+	relative to an existing library of wikipedia articles
+
+	returns a list of (keyword, score) tuples
+	"""
 
 	# convert to title case
 	lookup_name = search_term[0].upper() + search_term[1:].lower() + '.txt'
@@ -73,6 +94,11 @@ def keywords_with_scores(search_term):
 
 
 def get_keywords_from_file_and_directory(filepath, dirpath):
+	"""
+	compute the tf-idf keywords for terms in a given file, relative
+	to all files in a given directory (not necessarily containing the file, though it can)
+	"""
+
 	with open(filepath) as f:
 		filetext = f.read()
 	tf_dict = librarian.term_dict(filetext)
@@ -97,8 +123,12 @@ def keyword_test():
 
 
 if __name__ == '__main__':
-	keyword_test()
-	
+	while True:
+		next_term = input('Enter next term:\n')
+		if next_term in ['n','no','N','NO','q','x','z']:
+			break
+		else:
+			print(get_keywords(next_term))
 
 
 

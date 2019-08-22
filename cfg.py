@@ -8,10 +8,10 @@ from nltk import CFG
 
 
 """
-Playing with context-free grammars in nltk
+Created to help fill in acronyms with grammatically plausible sequences.
 
+Doing so by playing with context-free grammars in nltk:
 http://www.nltk.org/howto/generate.html
-
 """
 
 def word_frequency_by_pos(pos_tagged):

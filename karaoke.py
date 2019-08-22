@@ -139,9 +139,6 @@ if __name__ == '__main__':
 
 
 
-	#singability_tests()
-
-
 	
 
 
