@@ -1,0 +1,73 @@
+<song>
+
+	<frame>
+		<line stress="1 01"> Turn around </line>
+		<line stress="10 1 0 1 0 1 0 10 0 10"> Every now and then I get a little bit lonely </line>
+		<line stress="1 0 10 10 1"> And you're never coming round </line>
+	</frame>
+
+	<frame>
+		<line stress="1 01"> Turn around </line>
+		<line stress="10 1 0 1 0 1 0 10 0 10"> Every now and then I get a little bit tired </line>
+		<line stress="0 10 1 0 1 0 0 1"> Of listening to the sound of my tears </line>
+	</frame>
+
+	<frame>
+		<line stress="1 01"> Turn around </line>
+		<line stress="10 1 0 1 0 1 0 10 0 10"> Every now and then I get a little bit nervous </line>
+		<line stress="1 0 1 0 1 0 1 0 0 1"> That the best of all the years have gone by </line>
+	</frame>
+
+	<frame>
+		<line stress="1 01"> Turn around </line>
+		<line stress="10 1 0 1 0 1 0 10 0 101"> Every now and then I get a little bit terrified </line>
+		<line stress="0 1 0 1 0 1 0 0 1"> And then I see the look in your eyes </line>
+	</frame>
+
+	<frame>
+		<line stress="1 01 1 1"> Turn around bright eyes </line>
+		<line stress="10 1 0 1 0 1 01"> Every now and then I fall apart </line>
+		<line stress="1 01 1 1"> Turn around bright eyes </line>
+		<line stress="10 1 0 1 0 1 01"> Every now and then I fall apart </line>
+	</frame>
+
+	<frame>
+		<line stress="0 0 1 0 1 01"> And I need you now tonight </line>
+		<line stress="0 0 1 0 1 0 10"> And I need you more than ever </line>
+		<line stress="0 1 0 10 1 0 1"> And if you only hold me tight </line>
+		<line stress="1 0 10 1 010"> We'll be holding on forever </line>
+	</frame>
+
+	<frame>
+		<line stress="0 1 10 0 10 1 1"> And we'll only be making it right </line>
+		<line stress="0 0 10 0 1"> Cause we'll never be wrong </line>
+		<line stress="010 1 0 1 0 1 0 1 0 0 1"> Together we can take it to the end of the line </line>
+		<line stress="0 1 0 1 0 10 1 0 1 0 0 1"> You love is like a shadow on me all of the time </line>
+	</frame>
+
+	<frame>
+		<line stress="0 1 0 1 0 1 0 0 10 1 0 1"> I don't know what to do and I'm always in the dark </line>
+		<line stress="0 10 1 0 10 1 0 10 0 1"> We're living in a powder keg and giving off sparks </line>
+	</frame>
+
+	<frame>
+		<line stress="0 10 1 0 01"> I really need you tonight </line>
+		<line stress="010 10 1 01"> Forever's gonna start tonight </line>
+		<line stress="010 10 1 01"> Forever's gonna start tonight </line>
+	</frame>
+
+	<frame>
+		<line stress="0 01 0 1 1 0 10 0 1"> Once upon a time I was falling in love </line>
+		<line stress="0 1 0 10 10 01"> But now I'm only falling apart </line>
+		<line stress="0 10 1 0 1"> There's nothing I can do </line>
+		<line stress="0 10 01 0 0 1"> A total eclipse of the heart </line>
+	</frame>
+
+	<frame>
+		<line stress="0 01 0 1 1 0 1 0 0 1"> Once upon a time there was light in my life </line>
+		<line stress="0 1 0 10 1 0 0 1"> But now there's only love in the dark </line>
+		<line stress="10 1 0 1"> Nothing I can say </line>
+		<line stress="0 10 01 0 0 1"> A total eclipse of the heart </line>
+	</frame>
+
+</song>

@@ -1,0 +1,60 @@
+Risin' up	<stress="101">
+back on the street	<stress="1001">
+Did my time	<stress="1[01]1">
+took my chances	<stress="1[01]11">
+Went the distance	<stress="1010">
+now I'm back on my feet	<stress="101111">
+Just a man and his will to survive	<stress="0[02]10[02]1[012]01">
+
+So many times	<stress="[10]101">
+it happens too fast	<stress="010110?">
+You trade your passion for glory	<stress="[01]101011[10]">
+Don't lose your grip	<stress="[01]101">
+on the dreams of the past	<stress="[10]01[01][01]1">
+You must fight just to keep them alive	<stress="0[02]1[012][02]1[012]01">
+
+It's the eye of the tiger	<stress="[01]01[01][01]10">
+it's the thrill of the fight	<stress="[01]010[012]1">
+Risin' up to the challenge of our rival	<stress="101[01]010[01][01]1[10]">
+And the last known survivor	<stress="[01]011010">
+stalks his prey in the night	<stress="[01]01001">
+And he's watchin' us all	<stress="0[01]10[01]1">
+with the eye of the tiger	<stress="0[01]1[01]010">
+
+Face to face	<stress="101">
+out in the heat	<stress="10[01]1">
+Hangin' tough, stayin' hungry	<stress="10110[12][12]">
+They stack the odds	<stress="[01]101">
+'till we take to the street	<stress="[10]01[01][01]1">
+For the kill with the skill	<stress="0[02]1[012][02]1">
+to survive	<stress="1[02]1">
+
+It's the eye of the tiger	<stress="[01]01[01][01]10">
+it's the dream of the fight	<stress="[01]010[012]1">
+Risin' up to the challenge of our rival	<stress="101[01]010[01][01]1[10]">
+And the last known survivor	<stress="[01]011010">
+stalks his prey in the night	<stress="[01]01001">
+And he's watchin' us all	<stress="0[01]10[01]1">
+with the eye of the tiger	<stress="0[01]1[01]010">
+
+Risin' up	<stress="101">
+straight to the top	<stress="1001">
+Had the guts	<stress="1[01]1">
+got the glory	<stress="1[01]11">
+Went the distance	<stress="1010">
+now I'm not gonna stop	<stress="101[12][01]1">
+Just a man	<stress="0[02]1">
+and his will to survive	<stress="[012][02]1[012]01">
+
+It's the eye of the tiger	<stress="[01]01[01][01]10">
+it's the dream of the fight	<stress="[01]010[012]1">
+Risin' up to the challenge of our rival	<stress="101[01]010[01][01]1[10]">
+And the last known survivor	<stress="[01]011010">
+stalks his prey in the night	<stress="[01]01001">
+And he's watchin' us all	<stress="0[01]10[01]1">
+with the eye of the tiger	<stress="0[01]1[01]010">
+
+The eye of the tiger	<stress="010[02]1[02]">
+The eye of the tiger	<stress="010[02]1[02]">
+The eye of the tiger	<stress="010[02]1[02]">
+The eye of the tiger	<stress="010[02]1[02]">

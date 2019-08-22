@@ -1,0 +1,29 @@
+Yesterday	<stress="10[02]">
+All my troubles seemed so far away	<stress="10101[01]101">
+Now it looks as though they're here to stay	<stress="10101[01]101">
+Oh, I believe in yesterday	<stress="1101010[012]">
+
+Suddenly	<stress="100">
+I'm not half the man I used to be	<stress="10101[01]101">
+There's a shadow hanging over me	<stress="10101[01]101">
+Oh, yesterday came suddenly	<stress="1101010[012]">
+
+Why she had to go	<stress="11111">
+I don't know, she wouldn't say	<stress="1010101">
+I said something wrong	<stress="11111">
+Now I long for yesterday	<stress="101010[02]">
+
+Yesterday	<stress="10[02]">
+Love was such an easy game to play	<stress="10101[01]101">
+Now I need a place to hide away	<stress="10101[01]101">
+Oh, I believe in yesterday	<stress="1101010[012]">
+
+Why she had to go	<stress="11111">
+I don't know, she wouldn't say	<stress="1010101">
+I said something wrong	<stress="11111">
+Now I long for yesterday	<stress="101010[02]">
+
+Yesterday	<stress="10[02]">
+Love was such an easy game to play	<stress="10101[01]101">
+Now I need a place to hide away	<stress="10101[01]101">
+Oh, I believe in yesterday	<stress="1101010[012]">

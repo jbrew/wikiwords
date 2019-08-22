@@ -1,0 +1,31 @@
+Yesterday	<stress="10[02]" rhyme="A">
+All my troubles seemed so far away	<stress="101010101" rhyme="A">
+Now it looks as though they're here to stay	<stress="101010101" rhyme="A">
+Oh, I believe in yesterday	<stress="1101010[012]" rhyme="A">
+
+Suddenly	<stress="100" rhyme="B">
+I'm not half the man I used to be	<stress="101010101" rhyme="B">
+There's a shadow hanging over me	<stress="101010101" rhyme="B">
+Oh, yesterday came suddenly	<stress="1101010[012]" rhyme="B">
+
+Why she had to go	<stress="11111" rhyme="C">
+I don't know	<stress="101" rhyme="C">
+She wouldn't say	<stress="0101" rhyme="A">
+I said something wrong	<stress="11111" rhyme="D">
+Now I long for yesterday	<stress="101010[02]" rhyme="A">
+
+Yesterday	<stress="10[02]" rhyme="A">
+Love was such an easy game to play	<stress="101010101" rhyme="A">
+Now I need a place to hide away	<stress="101010101" rhyme="A">
+Oh, I believe in yesterday	<stress="1101010[012]" rhyme="A">
+
+Why she had to go	<stress="11111" rhyme="C">
+I don't know	<stress="101" rhyme="C">
+She wouldn't say	<stress="0101" rhyme="A">
+I said something wrong	<stress="11111" rhyme="D">
+Now I long for yesterday	<stress="101010[02]" rhyme="A">
+
+Yesterday	<stress="10[02]" rhyme="A">
+Love was such an easy game to play	<stress="101010101" rhyme="A">
+Now I need a place to hide away	<stress="101010101" rhyme="A">
+Oh, I believe in yesterday	<stress="1101010[012]" rhyme="A">
